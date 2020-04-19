@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Testing</title>
+    <meta name="description"
+        content="Frontend Testing es un libro donde se explican las técnicas básicas de testing orientadas al desarrollo web.">
+    <meta name=”robots” content="index, follow">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@iagolast">
+    <meta name="twitter:creator" content="@iagolast">
+    <meta name="twitter:title" content="Frontend Testing">
+    <meta name="twitter:description"
+        content="¿Quieres aprender a escribir tests pero no sabes por dónde empezar? ¡Este es tu Libro!">
+    <meta name="twitter:image" content="cover.jpg">
+
+
     <style>
         body {
             margin: 0;
@@ -21,18 +34,23 @@
 
         .First {
             display: flex;
-            padding-bottom: 8rem;
+            flex-direction: column;
         }
 
         .Book {
-            padding: 0 2rem;
-            flex: 1 1 2;
+            padding: 2rem 0;
+            margin: auto;
+        }
+
+        .Book img {
+            display: block;
+            width: 75%;
+            margin: auto;
         }
 
         .Info {
             flex: 1 1 1;
             text-align: justify;
-            padding-right: 6rem;
             padding-top: 3rem;
         }
 
@@ -54,9 +72,20 @@
             padding: 1rem;
             border-radius: .5rem;
             font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+            text-align: center;
         }
 
-        .About {}
+        .Btn:hover {
+            background-color: #a0221e;
+        }
+
+        .Links {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
         .About h2 {
             font-size: 2rem;
@@ -66,6 +95,26 @@
         .About p {
             font-size: 1.3rem;
             font-weight: 300;
+            text-align: justify;
+        }
+
+        @media all and (min-width: 900px) {
+            .First {
+                flex-direction: row;
+
+            }
+
+            .Info {
+                padding-right: 3rem;
+            }
+
+            .Book {
+                padding-top: 2rem;
+            }
+
+            .About {
+                margin-top: 3rem;
+            }
         }
     </style>
 </head>
@@ -82,7 +131,12 @@
                     casos prácticos.
                 </p>
 
-                <a class="Btn" href=""> Comprar en Amazon </a>
+                <div class="Links">
+                    <a class="Btn" href=""> Comprar en Amazon </a>
+                    <a class="Btn" href="https://leanpub.com/frontend-testing/" target="blank"
+                        rel="noreferrer noopener"> Comprar en LeanPub</a>
+                </div>
+
             </div>
 
             <div class="Book">
@@ -102,6 +156,13 @@
                 Este libro pretende acabar con todas esas excusas y enseñar a los programadores a mejorar la calidad de
                 su código explicando mediante ejemplos qué tipos de tests existen, qué características tienen y cuándo
                 deben de utilizarse .
+            </p>
+
+            <p>
+                El libro empezó siendo una entrada en un blog y la idea es que evolucione continuamente a partir del
+                feedback de los lectores.
+                También estará disponible un respositorio en gihub con ejemplos y ejercicios de todo lo explicado en el
+                texto.
             </p>
         </section>
 
