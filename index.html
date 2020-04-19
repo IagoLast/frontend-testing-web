@@ -48,7 +48,7 @@
         }
 
         main {
-            padding: 60px;
+            padding: 0 3rem;
             max-width: 1100px;
             margin: auto;
         }
@@ -59,20 +59,18 @@
         }
 
         .Book {
-            padding: 2rem 0;
-            margin: auto;
+            margin: 4rem auto;
         }
 
         .Book img {
             display: block;
             width: 75%;
             margin: auto;
+            max-width: 300px;
         }
 
         .Info {
-            flex: 1 1 1;
             text-align: justify;
-            padding-top: 3rem;
         }
 
         .Info__Title {
@@ -106,6 +104,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            margin-bottom: 2rem;
         }
 
         .About h2 {
@@ -120,17 +119,27 @@
         }
 
         @media all and (min-width: 900px) {
+            main {
+                padding: 4rem;
+            }
+
             .First {
                 flex-direction: row;
-
+                justify-content: space-between;
             }
 
             .Info {
-                padding-right: 3rem;
+                max-width: 600px;
             }
 
             .Book {
-                padding-top: 2rem;
+                margin: auto 0;
+                padding-top: 4rem;
+                padding-left: 4rem;
+            }
+
+            .Book img {
+                width: 350px;
             }
 
             .About {
@@ -147,7 +156,7 @@
                 <h1 class="Info__Title">Frontend Testing</h1>
                 <p class="Info__Description">
                     ¿Desarrollas para la web? ¿Quieres aprender a escribir tests pero no sabes por dónde empezar?
-
+                    
                     En este libro se explican los conceptos básicos de Testing en Front-End a través de ejemplos y
                     casos prácticos.
                 </p>
