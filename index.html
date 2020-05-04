@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Testing</title>
+    <link href="http://allfont.es/allfont.css?fonts=futura-bold" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/331ec49c0d78e469c42c1d814dd45838?family=Avenir+Book" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <meta name="description"
         content="¿Quieres aprender a escribir tests pero no sabes por dónde empezar? ¡Este es tu Libro!">
     <meta name=”robots” content="index, follow">
@@ -41,171 +45,487 @@
 
     <style>
         body {
+            position: relative;
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: #253652;
-            font-size: 16px;
         }
 
-        main {
-            padding: 0 3rem;
-            max-width: 1100px;
+        header {
+            border-bottom: 4px solid #EEF0F1;
+            height: 70px;
+        }
+
+        section {
+            color: #222;
+            position: relative;
+            padding: 100px 32px;
+        }
+
+        section.dark {
+            background: #1D2837;
+            color: #fff;
+        }
+
+        section.dark p {
+            font-family: Avenir;
+            font-size: 30px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 40px;
+        }
+
+        .wrapper {
+            position: relative;
+            margin: auto;
+            max-width: 1366px;
+        }
+
+        section.light {
+            color: #222;
+            text-align: center;
+        }
+
+        section.light span {
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 40px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+
+        section.light h2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        section.light p {
+            font-family: "Avenir Book";
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Futura-Bold', arial;
+            font-size: 70px;
+            font-weight: 500;
+            line-height: 93px;
+        }
+
+        h2 {
+            font-family: 'Futura-Bold', arial;
+            font-size: 42px;
+            letter-spacing: 0;
+            font-weight: 400;
+            line-height: 51px;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .First_book {
+            max-width: 466px;
             margin: auto;
         }
 
-        .First {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .Book {
-            margin: 4rem auto;
-        }
-
-        .Book img {
+        .First_book img {
             display: block;
-            width: 75%;
+            margin: 32px auto;
+            width: 100%;
+            height: auto;
+        }
+
+        .First p {
+            font-family: "Avenir Book";
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        .Button {
+            border-radius: 54.5px;
+            padding: 24px 48px;
+            background-color: #4791F6;
+            box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
+            color: #FFFFFF;
+            font-family: "Avenir Book";
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 0;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+
+        .About img {
+            display: none;
+        }
+
+        .About hr {
             margin: auto;
+            max-width: 1080px;
+            border: 2px solid #EEF0F1;
+            margin: 102px auto;
+        }
+
+        .Author {
+            background: #EEF0F1;
+            color: #222;
+            padding-bottom: 0;
+        }
+
+        .Author_data {
+            display: flex;
+            align-items: center;
+        }
+
+        .Author span {
+            font-family: 'Inter', sans-serif;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 40px;
+            text-transform: uppercase;
+        }
+
+        .Author_avatar {
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 16px;
+        }
+
+        .Author p {
+            font-family: Avenir;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 26px;
+        }
+
+        .Author img[src="img/info.svg"] {
+            display: none;
+        }
+
+        .Author_social a {
+            text-decoration: none;
+            margin-right: 24px;
+            margin-top: 32px;
+        }
+
+        .Buy {
+            padding: 24px 0 64px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            max-width: 1098px;
+            border-radius: 40px;
+            background: linear-gradient(180deg, #333E4E 0%, #1D2837 100%);
+            margin: auto;
+            bottom: -100px;
+            z-index: 1;
+        }
+
+        .Buy span {
+            text-transform: uppercase;
+            font-family: Inter;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 40px;
+            font-weight: 500;
+        }
+
+        .Buy_buttons {
+            margin-top: 42px;
+        }
+
+        .Buy_button {
+            display: block;
+            padding: 23px 66px;
+            border: 2px solid #FFFFFF;
+            border-radius: 54.5px;
+            box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
+            color: #FFFFFF;
+            font-family: Avenir;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 0;
+            line-height: 19px;
+            cursor: pointer;
+            margin: 24px auto;
             max-width: 300px;
         }
 
-        .Info {
-            text-align: justify;
+        .Contact {
+            padding-top: 200px;
+            text-align: center;
         }
 
-        .Info__Title {
-            font-size: 3rem;
-        }
-
-        .Info__Description {
-            font-size: 1.5rem;
-            padding-bottom: 2rem;
-        }
-
-        .Btn {
-            text-decoration: none;
+        .Contact span {
+            display: block;
             text-transform: uppercase;
-            color: white;
-            background-color: #cc302b;
-            font-size: 1.3rem;
-            padding: 1rem;
-            border-radius: .5rem;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 40px;
             font-weight: 600;
-            display: inline-block;
-            margin-bottom: 1rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .Contact_email {
+            letter-spacing: 1px;
+            line-height: 40px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            color: #1D2837;
+        }
+
+        footer {
+            color: #fff;
+            background: #1D2837;
             text-align: center;
-        }
-
-        .Btn:hover {
-            background-color: #a0221e;
-        }
-
-        .Links {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-bottom: 2rem;
-        }
-
-        .About h2 {
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        .About p {
-            font-size: 1.3rem;
+            padding: 32px;
+            font-family: Avenir;
+            font-size: 15px;
             font-weight: 300;
-            text-align: justify;
+            letter-spacing: 0;
+            line-height: 26px;
         }
 
-        @media all and (min-width: 900px) {
-            main {
-                padding: 4rem;
+
+
+        @media all and (min-width: 1280px) {
+
+            section {
+                padding: 100px 48px;
             }
 
             .First {
-                flex-direction: row;
-                justify-content: space-between;
+                position: relative;
+                display: flex;
             }
 
-            .Info {
+            .First h1 {
+                margin: 0;
+            }
+
+            .First p {
+                font-family: "Avenir Book";
+                font-size: 30px;
+                line-height: 32px;
+                margin: 40px auto;
+            }
+
+            .First_info {
+                max-width: 620px;
+            }
+
+            .First_book {
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                margin: auto;
+                position: absolute;
+                top: 0px;
+                right: 0;
+                z-index: 1;
+                max-width: 100%;
+            }
+
+            .First_book img {
+                margin: -16px;
+            }
+
+            .column {
                 max-width: 600px;
             }
 
-            .Book {
-                margin: auto 0;
-                padding-top: 4rem;
-                padding-left: 4rem;
+            .About .column {
+                margin: auto;
             }
 
-            .Book img {
-                width: 350px;
+            .About .wrapper {
+                position: relative;
             }
 
-            .About {
-                margin-top: 3rem;
+            .About img {
+                display: initial;
+                position: absolute;
+            }
+
+            .About img[src="img/1.svg"] {
+                right: -128px;
+                bottom: -64px;
+            }
+
+            .About img[src="img/2.svg"] {
+                top: -64px;
+                right: 54px;
+            }
+
+            .About img[src="img/3.svg"] {
+                left: 16px;
+                top: 30%;
+            }
+
+            .About img[src="img/4.svg"] {
+                left: -32px;
+                top: 50%;
+            }
+
+            .About img[src="img/5.svg"] {
+                right: -64px;
+                bottom: -64px;
+            }
+
+            .Author img[src="img/info.svg"] {
+                display: initial;
+                position: absolute;
+                right: 0;
+                top: 0;
             }
         }
     </style>
 </head>
 
 <body>
-    <main>
-        <section class="First">
-            <div class="Info">
-                <h1 class="Info__Title">Frontend Testing</h1>
-                <p class="Info__Description">
-                    ¿Desarrollas para la web? ¿Quieres aprender a escribir tests pero no sabes por dónde empezar?
-
-                    En este libro se explican los conceptos básicos de Testing en Front-End a través de ejemplos y
-                    casos prácticos.
+    <header></header>
+    <!-- First -->
+    <section class="">
+        <div class="First wrapper">
+            <div class="First_info">
+                <h1> Frontend Testing</h1>
+                <p>
+                    En este libro se explican los conceptos básicos de Testing en Front-End a través de ejemplos y casos
+                    prácticos.
+                </p>
+                <a href="http://samples.leanpub.com/frontend-testing-sample.pdf" class="Button">Descargar Muestra Gratuita</a>
+            </div>
+            <div class="First_book">
+                <img width="466" height="656" src="img/cover.png" alt="" />
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="dark">
+        <div class="wrapper">
+            <div class="column">
+                <h2>Marca la diferencia</h2>
+                <p>
+                    ¿Desarrollas para la web?
                 </p>
 
-                <div class="Links">
-                    <a class="Btn" href=""> Comprar en Amazon </a>
-                    <a class="Btn" href="https://leanpub.com/frontend-testing/" target="blank"
-                        rel="noreferrer noopener"> Comprar en LeanPub</a>
+                <p>
+                    ¿Quieres aprender a escribir tests pero no sabes por dónde empezar?
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section class="About light">
+        <!--  -->
+        <div class="wrapper">
+            <div class="column">
+                <span> Sobre este libro</span>
+                <h2>
+                    Aprende con ejemplos
+                </h2>
+
+                <p>
+                    Los tests automáticos no son nada nuevo en el mundo del software y aunque cada vez más
+                    desarrolladores
+                    están
+                    convencidos de su utilidad, pocos escriben tests en su día a día. Las excusas son siempre las
+                    mismas: no
+                    sé
+                    hacer tests, no tengo tiempo, es algo que tengo pendiente...
+                </p>
+
+                <p>
+                    Este libro pretende acabar con todas esas excusas y enseñar a los programadores a mejorar la calidad
+                    de
+                    su
+                    código explicando mediante ejemplos qué tipos de tests existen, qué características tienen y cuándo
+                    deben de
+                    utilizarse.
+                </p>
+
+                <img src="img/1.svg" alt="" />
+                <img src="img/2.svg" alt="" />
+                <img src="img/3.svg" alt="" />
+
+            </div>
+        </div>
+        <hr>
+        <!--  -->
+        <div class="wrapper">
+            <div class="column">
+                <h2>Visión Colaborativa</h2>
+                <p>
+                    El libro empezó siendo una entrada en un blog y la idea es que evolucione continuamente a partir del
+                    feedback de los lectores. También estará disponible un repositorio en Github con ejemplos y
+                    ejercicios de todo lo explicado en el texto.
+                </p>
+
+                <img src="img/4.svg" alt="" />
+                <img src="img/5.svg" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- Author -->
+    <section class="Author">
+        <div class="wrapper">
+            <div class="Info column">
+                <span> Sobre el Autor</span>
+                <div class="Author_data">
+                    <img width="70" height="70" alt="" class="Author_avatar"
+                        src="https://pbs.twimg.com/profile_images/1237886646369976321/Y-3wc_KP_400x400.jpg" />
+                    <h2> Iago Lastra Rodríguez</h2>
                 </div>
-
+                <p>
+                    I love everything about software, technology and of course programming! I am very serious about
+                    writing clean code. I'm always trying to learn something new about algorithms, good practices,
+                    testing, design patterns or software architecture.
+                </p>
+                <div class="Author_social">
+                    <a target="_blank" href="//twitter.com/iagolast">
+                        <img src="img/twitter.svg" />
+                    </a>
+                    <a target="_blank" href="//iagolast.github.io">
+                        <img src="img/github.svg" />
+                    </a>
+                </div>
             </div>
+            <img src="img/info.svg" alt="" />
+        </div>
 
-            <div class="Book">
-                <img alt="Portada del libro en la que se puede ver un gato dibujado." src="cover.jpg" width="400">
+        <div class="Buy">
+            <span> Comprar </span>
+            <h2> Elige la plataforma</h2>
+            <div class="Buy_buttons">
+                <a class="Buy_button"> Amazon (Comming soon)</a>
+                <a href="//leanpub.com/frontend-testing" target="_blank" class="Buy_button"> LeanPub</a>
             </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="Contact">
+        <div class="wrapper column">
+            <span> Contactar </span>
+            <h2>
+                ¿Tienes alguna sugerencia o comentario?
+            </h2>
 
-        </section>
+            <a class="Contact_email" href="mailto:info@frontend-testing.org"> info@frontend-testing.org</a>
+        </div>
+    </section>
 
-        <section class="About">
-            <h2>Sobre el libro</h2>
-            <p>
-                Los tests automáticos no son nada nuevo en el mundo del software y aunque cada vez más desarrolladores
-                están convencidos de su utilidad, pocos escriben tests en su día a día.
+    <footer>
+        <span> © 2020 iagolast </span>
+    </footer>
 
-                Las excusas son siempre las mismas: no sé hacer tests, no tengo tiempo, es algo que tengo pendiente...
-
-                Este libro pretende acabar con todas esas excusas y enseñar a los programadores a mejorar la calidad de
-                su código explicando mediante ejemplos qué tipos de tests existen, qué características tienen y cuándo
-                deben de utilizarse .
-            </p>
-
-            <p>
-                El libro empezó siendo una entrada en un blog y la idea es que evolucione continuamente a partir del
-                feedback de los lectores.
-                También estará disponible un respositorio en gihub con ejemplos y ejercicios de todo lo explicado en el
-                texto.
-            </p>
-        </section>
-
-        <section class="About">
-            <h2>Feedback</h2>
-            <p>
-                La intención es hacer un libro que mejore constantemente a partir del feedback de los lectores. </p>
-            <p>
-                Si echas en falta algún contenido o tienes cualquier comentario puedes escribir a <a target="_blank" href="mailto:info@frontend-testing.org">info@frontend-testing.org</a>
-            </p>
-        </section>
-
-    </main>
 
 </body>
 
