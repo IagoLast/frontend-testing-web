@@ -8,7 +8,7 @@
     <link href="//allfont.es/allfont.css?fonts=futura-bold" rel="stylesheet" type="text/css" />
     <link href="//db.onlinewebfonts.com/c/331ec49c0d78e469c42c1d814dd45838?family=Avenir+Book" rel="stylesheet"
         type="text/css" />
-    <link href="//fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description"
         content="¿Quieres aprender a escribir tests pero no sabes por dónde empezar? ¡Este es tu Libro!">
     <meta name=”robots” content="index, follow">
@@ -47,6 +47,7 @@
         body {
             position: relative;
             margin: 0;
+            transition: all .2s;
         }
 
         header {
@@ -60,23 +61,30 @@
             padding: 100px 32px;
         }
 
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 0;
+            line-height: 34px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600
+        }
+
         section.dark {
             background: #1D2837;
             color: #fff;
         }
 
-        section.dark p {
-            font-family: Avenir;
-            font-size: 30px;
-            font-weight: 300;
-            letter-spacing: 0;
-            line-height: 40px;
-        }
-
         .wrapper {
             position: relative;
             margin: auto;
-            max-width: 1366px;
+            max-width: 1080px;
         }
 
         section.light {
@@ -107,46 +115,38 @@
             text-align: center;
         }
 
-        h1 {
+        .First {
+            text-align: center;
+        }
+
+        .First h1 {
             margin: 0;
-            font-family: 'Futura-Bold', arial;
-            font-size: 70px;
-            font-weight: 500;
-            line-height: 93px;
-        }
-
-        h2 {
-            font-family: 'Futura-Bold', arial;
-            font-size: 42px;
+            font-family: 'Inter', sans-serif;
+            font-size: 50px;
             letter-spacing: 0;
-            font-weight: 400;
-            line-height: 51px;
-        }
-
-        a {
-            text-decoration: none;
-            display: inline-block;
+            line-height: 60px;
+            font-weight: 600;
         }
 
         .First_book {
-            max-width: 466px;
-            margin: auto;
-        }
-
-        .First_book img {
-            display: block;
-            margin: 32px auto;
-            width: 100%;
-            height: auto;
+            display: none;
         }
 
         .First p {
             font-family: "Avenir Book";
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 34px;
         }
 
-        .Button {
+        .First_Buttons {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .First_Button {
             border-radius: 54.5px;
             padding: 24px 48px;
             background-color: #4791F6;
@@ -158,6 +158,43 @@
             letter-spacing: 0;
             line-height: 19px;
             text-transform: uppercase;
+        }
+
+        .Second {
+            padding-top: 0;
+            text-align: center;
+        }
+
+        .Second h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 34px;
+            margin-bottom: 30px;
+        }
+
+        .Second_book {
+            position: relative;
+            top: -60px;
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .Second_book img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: auto;
+        }
+
+        .Second p {
+            font-family: "Avenir Book";
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 24px;
+            margin: 0;
         }
 
         .About img {
@@ -174,7 +211,11 @@
         .Author {
             background: #EEF0F1;
             color: #222;
-            padding-bottom: 0;
+            padding: 100px 0 0 0;
+        }
+
+        .Author .Info {
+            padding: 32px;
         }
 
         .Author_data {
@@ -184,7 +225,6 @@
 
         .Author span {
             font-family: 'Inter', sans-serif;
-            font-family: Inter;
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 1px;
@@ -213,16 +253,14 @@
         .Author_social a {
             text-decoration: none;
             margin-right: 24px;
-            margin-top: 32px;
         }
 
         .Buy {
-            padding: 24px 0 64px 0;
+            padding: 45px 0;
             text-align: center;
             color: white;
             position: relative;
             max-width: 1098px;
-            border-radius: 40px;
             background: linear-gradient(180deg, #333E4E 0%, #1D2837 100%);
             margin: auto;
             bottom: -100px;
@@ -231,11 +269,19 @@
 
         .Buy span {
             text-transform: uppercase;
-            font-family: Inter;
+
             font-size: 14px;
             letter-spacing: 1px;
             line-height: 40px;
             font-weight: 500;
+        }
+
+        .Buy h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            letter-spacing: 0;
+            line-height: 34px;
+            font-weight: 600;
         }
 
         .Buy_buttons {
@@ -294,17 +340,37 @@
             line-height: 26px;
         }
 
-
-
-        @media all and (min-width: 1280px) {
-
+        @media all and (min-width: 1100px) {
             section {
                 padding: 100px 48px;
             }
 
+            .column {
+                max-width: 600px;
+            }
+
+            .First {
+                text-align: left;
+                padding-bottom: 100px;
+            }
+
+            .First h1 {
+                font-size: 70px;
+                line-height: 93px;
+            }
+
+            .First p {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .First_Buttons {
+                justify-content: flex-start;
+            }
+
             .First {
                 position: relative;
-                display: flex;
+                /* display: flex; */
             }
 
             .First h1 {
@@ -328,18 +394,49 @@
                 flex: 1;
                 margin: auto;
                 position: absolute;
-                top: 0px;
+                top: 50px;
                 right: 0;
                 z-index: 1;
-                max-width: 100%;
-            }
-
-            .First_book img {
+                max-width: 466px;
                 margin: -16px;
             }
 
-            .column {
-                max-width: 600px;
+            .First_book img {
+                display: block;
+                margin: -16px;
+                width: 100%;
+                height: auto;
+            }
+
+            .Second {
+                padding-top: 100px;
+                text-align: left;
+            }
+
+            .Second h2 {
+                text-align: left;
+                font-weight: 600;
+                font-size: 42px;
+                line-height: 51px;
+            }
+
+            .Second p {
+                font-size: 30px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 40px;
+            }
+
+            .Second_book {
+                display: none;
+            }
+
+            .Author {
+                padding: 100px 0 0 0;
+            }
+
+            .Buy {
+                border-radius: 40px;
             }
 
             .About .column {
@@ -397,7 +494,7 @@
 <body>
     <header></header>
     <!-- First -->
-    <section class="">
+    <section class="First">
         <div class="First wrapper">
             <div class="First_info">
                 <h1> Frontend Testing</h1>
@@ -405,17 +502,25 @@
                     En este libro se explican los conceptos básicos de Testing en Front-End a través de ejemplos y casos
                     prácticos.
                 </p>
-                <a href="http://samples.leanpub.com/frontend-testing-sample.pdf" class="Button"> Muestra Gratuita </a>
+                <div class="First_Buttons">
+                    <a href="http://samples.leanpub.com/frontend-testing-sample.pdf" class="First_Button">
+                        Muestra Gratuita
+                    </a>
+
+                </div>
+                <div class="First_book">
+                    <img width="466" height="656" src="img/coverx2.png" alt="" />
+                </div>
             </div>
-            <div class="First_book">
-                <img width="466" height="656" src="img/cover.png" alt="" />
-            </div>
-        </div>
     </section>
     <!--  -->
-    <section class="dark">
+    <section class="Second dark">
         <div class="wrapper">
             <div class="column">
+                <div class="Second_book">
+                    <img width="466" height="656" src="img/coverx2.png" alt="" />
+                </div>
+
                 <h2>Marca la diferencia</h2>
                 <p>
                     ¿Desarrollas para la web?
@@ -486,7 +591,7 @@
                 <div class="Author_data">
                     <img width="70" height="70" alt="" class="Author_avatar"
                         src="https://pbs.twimg.com/profile_images/1237886646369976321/Y-3wc_KP_400x400.jpg" />
-                    <h2> @iagolast</h2>
+                    <h2 class="Author_name"> Iago Lastra Rodríguez</h2>
                 </div>
                 <p>
                     I love everything about software, technology and of course programming! I am very serious about
