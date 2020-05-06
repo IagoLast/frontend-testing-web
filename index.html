@@ -55,6 +55,23 @@
             height: 70px;
         }
 
+        header nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        header nav ul li a {
+            color: #222;
+            font-family: "Avenir Book";
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: 16px;
+            text-transform: uppercase;
+            padding: 24px;
+        }
+
         section {
             color: #222;
             position: relative;
@@ -320,12 +337,13 @@
             font-family: 'Inter', sans-serif;
         }
 
-        .Contact_email {
-            letter-spacing: 1px;
-            line-height: 40px;
-            font-weight: 600;
-            font-family: 'Inter', sans-serif;
-            color: #1D2837;
+        .Contact p {
+            font-family: "Avenir Book";
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 24px;
+            margin: 30px auto;
         }
 
         footer {
@@ -492,9 +510,18 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav class="wrapper">
+            <ul>
+                <li><a href="#libro">Libro</a></li>
+                <li><a href="#author">Autor</a></li>
+                <li><a href="#comprar">Comprar</a></li>
+                <li><a href="#contactar">Contactar</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- First -->
-    <section class="First">
+    <section id="libro" class="First">
         <div class="First wrapper">
             <div class="First_info">
                 <h1> Frontend Testing</h1>
@@ -554,11 +581,8 @@
 
                 <p>
                     Este libro pretende acabar con todas esas excusas y enseñar a los programadores a mejorar la calidad
-                    de
-                    su
-                    código explicando mediante ejemplos qué tipos de tests existen, qué características tienen y cuándo
-                    deben de
-                    utilizarse.
+                    de su código explicando mediante ejemplos qué tipos de tests existen, qué características tienen y cuándo
+                    deben de utilizarse.
                 </p>
 
                 <img src="img/1.svg" alt="" />
@@ -574,8 +598,8 @@
                 <h2>Visión Colaborativa</h2>
                 <p>
                     El libro empezó siendo una entrada en un blog y la idea es que evolucione continuamente a partir del
-                    feedback de los lectores. También estará disponible un repositorio en Github con ejemplos y
-                    ejercicios de todo lo explicado en el texto.
+                    feedback de los lectores. También estará disponible un repositorio en Github con ejemplos y ejercicios
+                    de todo lo explicado en el texto.
                 </p>
 
                 <img src="img/4.svg" alt="" />
@@ -584,7 +608,7 @@
         </div>
     </section>
     <!-- Author -->
-    <section class="Author">
+    <section id="autor" class="Author">
         <div class="wrapper">
             <div class="Info column">
                 <span> Sobre el Autor</span>
@@ -610,24 +634,26 @@
             <img src="img/info.svg" alt="" />
         </div>
 
-        <div class="Buy">
+        <div id="comprar" class="Buy">
             <span> Comprar </span>
             <h2> Elige la plataforma</h2>
             <div class="Buy_buttons">
-                <a class="Buy_button"> Amazon (Comming soon)</a>
+                <!-- <a class="Buy_button"> Amazon (Comming soon)</a> -->
                 <a href="//leanpub.com/frontend-testing" target="_blank" class="Buy_button"> LeanPub</a>
             </div>
         </div>
     </section>
     <!--  -->
-    <section class="Contact">
+    <section id="contactar" class="Contact">
         <div class="wrapper column">
             <span> Contactar </span>
             <h2>
                 ¿Tienes alguna sugerencia o comentario?
             </h2>
-
-            <a class="Contact_email" href="mailto:info@frontend-testing.org"> info@frontend-testing.org</a>
+            <p>
+                En el mundo del software y especialmente en de javascript todo cambia constantemente y por ello es necesario que este libro esté siempre al día.
+            </p>
+            <a class="First_Button" href="mailto:info@frontend-testing.org"> Escríbeme un email </a>
         </div>
     </section>
 
