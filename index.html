@@ -52,10 +52,11 @@
 
         header {
             border-bottom: 4px solid #EEF0F1;
-            height: 70px;
         }
 
         header nav ul {
+            padding: 0;
+            margin: 0;
             display: flex;
             justify-content: flex-end;
             list-style: none;
@@ -68,8 +69,9 @@
             font-weight: 900;
             letter-spacing: 1px;
             line-height: 16px;
-            text-transform: uppercase;
             padding: 24px;
+
+
         }
 
         section {
@@ -90,7 +92,7 @@
             line-height: 34px;
             text-align: center;
             font-family: 'Inter', sans-serif;
-            font-weight: 600
+            font-weight: 700
         }
 
         section.dark {
@@ -120,7 +122,6 @@
 
         section.light h2 {
             font-family: 'Inter', sans-serif;
-            font-weight: 600;
         }
 
         section.light p {
@@ -174,7 +175,10 @@
             font-weight: 900;
             letter-spacing: 0;
             line-height: 19px;
-            text-transform: uppercase;
+        }
+
+        .First_Button:hover {
+            box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
         }
 
         .Second {
@@ -182,13 +186,12 @@
             text-align: center;
         }
 
-        .Second h2 {
+        h2 {
             font-family: 'Inter', sans-serif;
-            font-size: 28px;
-            font-weight: 300;
+            font-size: 42px;
             letter-spacing: 0;
-            line-height: 34px;
-            margin-bottom: 30px;
+            line-height: 51px;
+            margin-bottom: 34px;
         }
 
         .Second_book {
@@ -238,6 +241,7 @@
         .Author_data {
             display: flex;
             align-items: center;
+            margin: 16px 0 32px 0;
         }
 
         .Author span {
@@ -253,6 +257,15 @@
             border-radius: 50%;
             display: inline-block;
             margin-right: 16px;
+        }
+
+        .Author_name {
+            color: #222222;
+            font-family: Inter;
+            font-size: 42px;
+            letter-spacing: 0;
+            line-height: 53px;
+            margin: auto 0;
         }
 
         .Author p {
@@ -313,7 +326,7 @@
             color: #FFFFFF;
             font-family: Avenir;
             font-size: 14px;
-            font-weight: 900;
+            font-weight: 600;
             letter-spacing: 0;
             line-height: 19px;
             cursor: pointer;
@@ -357,6 +370,11 @@
             line-height: 26px;
         }
 
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
         @media all and (min-width: 1100px) {
             section {
                 padding: 100px 48px;
@@ -364,6 +382,13 @@
 
             .column {
                 max-width: 600px;
+            }
+
+            header nav ul li a {
+                font-size: 15px;
+                font-weight: 900;
+                letter-spacing: 0;
+                line-height: 20px;
             }
 
             .First {
@@ -374,11 +399,6 @@
             .First h1 {
                 font-size: 70px;
                 line-height: 93px;
-            }
-
-            .First p {
-                font-size: 30px;
-                line-height: 40px;
             }
 
             .First_Buttons {
@@ -395,10 +415,8 @@
             }
 
             .First p {
-                font-family: "Avenir Book";
                 font-size: 30px;
-                line-height: 32px;
-                margin: 40px auto;
+                line-height: 40px;
             }
 
             .First_info {
@@ -530,7 +548,7 @@
                 </p>
                 <div class="First_Buttons">
                     <a href="//leanpub.com/frontend-testing" target="_blank" class="First_Button">
-                        Comprar en LeanPub
+                        Descárgalo aquí
                     </a>
                 </div>
                 <div class="First_book">
@@ -659,14 +677,20 @@
             </p>
 
             <p>
-                El libro evoluciona con el tiempo, incluyendo nuevas herramientas y técnicas y sobre todo el feedback de los lectores :) 
+                El libro evoluciona con el tiempo, incluyendo nuevas herramientas y técnicas y sobre todo el feedback de
+                los lectores :)
             </p>
             <a class="First_Button" href="mailto:info@frontend-testing.org"> Escríbeme un email </a>
         </div>
     </section>
 
     <footer>
-        <span> © 2020 iagolast </span>
+        <span> © 2020 iagolast - </span>
+        <span>
+            Designed by
+            <a href="//stefaniacasal.com" target="_blank"> stefaniacasal.com</a>
+        </span>
+
     </footer>
 
 
