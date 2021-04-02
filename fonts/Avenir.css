@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Avenir Book";
+  font-display: swap;
+  src: url("./avenir.eot") format("embedded-opentype"),
+    url("./avenir.woff2") format("woff2"), url("./avenir.woff") format("woff"),
+    url("./avenir.ttf") format("truetype");
+}

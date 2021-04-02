@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Testing</title>
-    <link href="https://allfont.es/allfont.css?fonts=futura-bold" rel="stylesheet" type="text/css" />
-    <link href="//db.onlinewebfonts.com/c/331ec49c0d78e469c42c1d814dd45838?family=Avenir+Book" rel="stylesheet"
-        type="text/css" />
-    <link href="//fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="img/coverx2.png" as="image" />
+    <link href="fonts/Avenir.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description"
         content="¿Quieres aprender a escribir tests pero no sabes por dónde empezar? ¡Este es tu Libro!">
     <meta name=”robots” content="index, follow">
@@ -166,12 +165,12 @@
 
         .First_Button {
             border-radius: 54.5px;
-            padding: 24px 48px;
+            padding: 22px 44px;
             background-color: #4791F6;
             box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
             color: #FFFFFF;
             font-family: "Avenir Book";
-            font-size: 14px;
+            font-size: 20px;
             font-weight: 900;
             letter-spacing: 0;
             line-height: 19px;
@@ -546,7 +545,7 @@
                     prácticos.
                 </p>
                 <div class="First_Buttons">
-                    <a href="//leanpub.com/frontend-testing" rel="noopener" target="_blank" class="First_Button">
+                    <a href="https://leanpub.com/frontend-testing" rel="noopener" target="_blank" class="First_Button">
                         Descárgalo aquí
                     </a>
                 </div>
@@ -601,9 +600,9 @@
                     deben de utilizarse.
                 </p>
 
-                <img src="img/1.svg" alt="" />
-                <img src="img/2.svg" alt="" />
-                <img src="img/3.svg" alt="" />
+                <img loading="lazy" src="img/1.svg" alt="" />
+                <img loading="lazy" src="img/2.svg" alt="" />
+                <img loading="lazy" src="img/3.svg" alt="" />
 
             </div>
         </div>
@@ -619,8 +618,8 @@
                     de todo lo explicado en el texto.
                 </p>
 
-                <img src="img/4.svg" alt="" />
-                <img src="img/5.svg" alt="" />
+                <img loading="lazy" src="img/4.svg" alt="" />
+                <img loading="lazy" src="img/5.svg" alt="" />
             </div>
         </div>
     </section>
@@ -630,7 +629,7 @@
             <div class="Info column">
                 <span> Sobre el Autor</span>
                 <div class="Author_data">
-                    <img width="70" height="70" alt="" class="Author_avatar"
+                    <img loading="lazy" width="70" height="70" alt="" class="Author_avatar"
                         src="https://pbs.twimg.com/profile_images/1237886646369976321/Y-3wc_KP_400x400.jpg" />
                     <h2 class="Author_name"> Iago Lastra Rodríguez</h2>
                 </div>
@@ -640,15 +639,15 @@
                     testing, design patterns or software architecture.
                 </p>
                 <div class="Author_social">
-                    <a rel="noopener" target="_blank" href="//twitter.com/iagolast">
-                        <img alt="Twitter" src="img/twitter.svg" />
+                    <a rel="noopener" target="_blank" href="https://twitter.com/iagolast">
+                        <img width="37" height="30" loading="lazy" alt="Twitter" src="img/twitter.svg" />
                     </a>
-                    <a rel="noopener" target="_blank" href="//iagolast.github.io">
-                        <img alt="Github" src="img/github.svg" />
+                    <a rel="noopener" target="_blank" href="https://iagolast.github.io">
+                        <img width="35" height="35" alt="Github" src="img/github.svg" />
                     </a>
                 </div>
             </div>
-            <img src="img/info.svg" alt="" />
+            <img loading="lazy" src="img/info.svg" alt="" />
         </div>
 
         <div id="comprar" class="Buy">
@@ -656,8 +655,8 @@
             <h2> Elige la plataforma</h2>
             <div class="Buy_buttons">
                 <!-- <a class="Buy_button"> Amazon (Comming soon)</a> -->
-                <a rel="noopener" href="//leanpub.com/frontend-testing" target="_blank" class="Buy_button"> LeanPub</a>
-                <a rel="noopener" href="http://samples.leanpub.com/frontend-testing-sample.pdf" class="Buy_button">
+                <a rel="noopener" href="https://leanpub.com/frontend-testing" target="_blank" class="Buy_button"> LeanPub</a>
+                <a rel="noopener" href="https://samples.leanpub.com/frontend-testing-sample.pdf" class="Buy_button">
                     Descargar Muestra Gratuita
                 </a>
             </div>
@@ -687,7 +686,7 @@
         <span> © 2020 iagolast - </span>
         <span>
             Designed by
-            <a href="//stefaniacasal.com" target="_blank"> stefaniacasal.com</a>
+            <a rel="noopener noreferrer" href="https://stefaniacasal.com" target="_blank"> stefaniacasal.com</a>
         </span>
 
     </footer>
