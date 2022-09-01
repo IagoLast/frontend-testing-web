@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Frontend Testing",
+  "image": [
+    "https://frontend-testing.org/img/cover.png",
+    "https://frontend-testing.org/img/coverx2.png"
+  ],
+  "description": "Los tests automáticos no son nada nuevo en el mundo del software y aunque cada vez más desarrolladores están convencidos de su utilidad, pocos escriben tests en su día a día. Las excusas son siempre las mismas: no sé hacer tests, no tengo tiempo, es algo que tengo pendiente... Este libro pretende acabar con todas esas excusas y enseñar a los programadores a mejorar la calidad de su código explicando mediante ejemplos qué tipos de tests existen, qué características tienen y cuándo deben de utilizarse.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "89"
+  }
+}
