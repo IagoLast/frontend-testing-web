@@ -4,36 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Testing</title>
-    <link rel="preload" href="img/coverx2.png" as="image" />
-    <link href="fonts/Avenir.css" rel="stylesheet" type="text/css" />
+    <title>Frontend Architecture</title>
+
+    <link rel="preload" href="static/img/coverx2.png" as="image" />
+    <link href="static/fonts/Avenir.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <meta name="description"
         content="¿Quieres aprender a escribir tests pero no sabes por dónde empezar? ¡Este es tu Libro!">
+
     <meta name=”robots” content="index, follow">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@iagolast">
     <meta name="twitter:creator" content="@iagolast">
-    <meta name="twitter:title" content="Frontend Testing">
+    <meta name="twitter:title" content="Frontend Architecture">
     <meta name="twitter:description"
         content="¿Quieres aprender a escribir tests pero no sabes por dónde empezar? ¡Este es tu Libro!">
     <meta name="twitter:image" content="https://frontend-testing.org/image.png">
     <meta name="theme-color" content="#24a855">
-    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <meta property="og:title" content="Frontend Testing" />
-    <meta property="og:site_name" content="Frontend Testing" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="static/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/icons/favicon-16x16.png">
+    <meta property="og:title" content="Frontend Architecture" />
+    <meta property="og:site_name" content="Frontend Architecture" />
     <meta property="og:description"
         content="¿Quieres aprender a escribir tests pero no sabes por dónde empezar? ¡Este es tu Libro!" />
     <meta property="og:image" content="https://frontend-testing.org/image.png">
@@ -46,7 +50,7 @@
         }
 
         header {
-            border-bottom: 4px solid #EEF0F1;
+            border-bottom: 1px solid #EEF0F1;
         }
 
         header nav ul {
@@ -91,7 +95,7 @@
         }
 
         section.dark {
-            background: #1D2837;
+            background: #082719;
             color: #fff;
         }
 
@@ -138,7 +142,7 @@
             font-size: 50px;
             letter-spacing: 0;
             line-height: 60px;
-            font-weight: 600;
+            font-weight: 900;
         }
 
         .First_book {
@@ -162,7 +166,7 @@
         .First_Button {
             border-radius: 54.5px;
             padding: 22px 44px;
-            background-color: #4791F6;
+            background-color: #2f7d5b;
             box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
             color: #FFFFFF;
             font-family: "Avenir Book";
@@ -271,7 +275,7 @@
             line-height: 26px;
         }
 
-        .Author img[src="img/info.svg"] {
+        .Author img[src="static/img/info.svg"] {
             display: none;
         }
 
@@ -286,7 +290,7 @@
             color: white;
             position: relative;
             max-width: 1098px;
-            background: linear-gradient(180deg, #333E4E 0%, #1D2837 100%);
+            background: linear-gradient(180deg, #185239 0%, #083e27 100%);
             margin: auto;
             bottom: -100px;
             z-index: 1;
@@ -355,7 +359,7 @@
 
         footer {
             color: #fff;
-            background: #1D2837;
+            background: #1a5a3f;
             text-align: center;
             padding: 32px;
             font-family: Avenir;
@@ -431,11 +435,11 @@
                 margin: -16px;
             }
 
-            .First_book img {
+            /* .First_book img {
                 display: block;
                 margin: -16px;
                 width: 100%;
-            }
+            } */
 
             .Second {
                 padding-top: 100px;
@@ -481,27 +485,27 @@
                 position: absolute;
             }
 
-            .About img[src="img/1.svg"] {
+            .About img[src="static/img/1.svg"] {
                 right: -128px;
                 bottom: -64px;
             }
 
-            .About img[src="img/2.svg"] {
+            .About img[src="static/img/2.svg"] {
                 top: -64px;
                 right: 54px;
             }
 
-            .About img[src="img/3.svg"] {
+            .About img[src="static/img/3.svg"] {
                 left: 16px;
                 top: 30%;
             }
 
-            .About img[src="img/4.svg"] {
+            .About img[src="static/img/4.svg"] {
                 left: -32px;
                 top: 50%;
             }
 
-            .About img[src="img/5.svg"] {
+            .About img[src="static/img/5.svg"] {
                 right: -64px;
                 bottom: -64px;
             }
@@ -510,12 +514,105 @@
                 padding: 23px 66px;
             }
 
-            .Author img[src="img/info.svg"] {
+            .Author img[src="static/img/info.svg"] {
                 display: initial;
                 position: absolute;
                 right: 0;
                 top: 0;
             }
+        }
+    </style>
+
+    <style>
+        .book-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1300px;
+        }
+
+        @keyframes initAnimation {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(-20deg);
+            }
+        }
+
+        .book {
+            width: 275px;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateY(-20deg);
+            transition: 1s ease;
+            animation: 1s ease 0s 1 initAnimation;
+        }
+
+        .book-container:hover .book,
+        .book-container:focus .book {
+            transform: rotateY(0deg);
+        }
+
+        .book> :first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+            width: 275px;
+            height: 400px;
+            transform: translateZ(22.5px);
+            background-color: #57daa1;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 5px 5px 20px #666;
+        }
+
+        .book::before {
+            position: absolute;
+            content: ' ';
+            background-color: blue;
+            left: 0;
+            top: 4px;
+            width: 43px;
+            height: 392px;
+            transform: translateX(248.5px) rotateY(90deg);
+            background: linear-gradient(90deg,
+                    #fff 0%,
+                    #f9f9f9 5%,
+                    #fff 10%,
+                    #f9f9f9 15%,
+                    #fff 20%,
+                    #f9f9f9 25%,
+                    #fff 30%,
+                    #f9f9f9 35%,
+                    #fff 40%,
+                    #f9f9f9 45%,
+                    #fff 50%,
+                    #f9f9f9 55%,
+                    #fff 60%,
+                    #f9f9f9 65%,
+                    #fff 70%,
+                    #f9f9f9 75%,
+                    #fff 80%,
+                    #f9f9f9 85%,
+                    #fff 90%,
+                    #f9f9f9 95%,
+                    #fff 100%);
+        }
+
+        .book::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: ' ';
+            width: 275px;
+            height: 400px;
+            transform: translateZ(-22.5px);
+            background-color: #57daa1;
+            border-radius: 0 4px 4px 0;
+            box-shadow: -10px 0 50px 10px #666;
         }
     </style>
 </head>
@@ -531,14 +628,14 @@
             </ul>
         </nav>
     </header>
+
     <!-- First -->
     <section id="libro" class="First">
         <div class="First wrapper">
             <div class="First_info">
-                <h1> Frontend Testing</h1>
+                <h1> Frontend Architecture</h1>
                 <p>
-                    En este libro se explican los conceptos básicos de Testing en Front-End a través de ejemplos y casos
-                    prácticos.
+                    Una introducción teórica y práctica al mundo de la arquitectura de software orientada al frontend.
                 </p>
                 <div class="First_Buttons">
                     <a href="https://leanpub.com/frontend-testing" rel="noopener" target="_blank" class="First_Button">
@@ -546,79 +643,87 @@
                     </a>
                 </div>
                 <div class="First_book">
-                    <img width="466" height="656" src="img/coverx2.png" alt="" />
+
+                    <a class="book-container" href="" target="_blank" rel="noreferrer noopener">
+                        <div class="book">
+                            <img alt="" src="static/img/cover.png" />
+                        </div>
+                    </a>
+
                 </div>
             </div>
     </section>
-    <!--  -->
+
     <section class="Second dark">
         <div class="wrapper">
-            <div class="column">
+            <div class="">
                 <div class="Second_book">
-                    <img width="466" height="656" src="img/coverx2.png" alt="" />
+                    <a class="book-container" href="" target="_blank" rel="noreferrer noopener">
+                        <div class="book">
+                            <img alt="" src="static/img/cover.png" />
+                        </div>
+                    </a>
                 </div>
 
-                <h2>Marca la diferencia</h2>
-                <p>
-                    ¿Desarrollas para la web?
-                </p>
+                <h2>Acaba con las malas arquitecturas</h2>
 
-                <p>
-                    ¿Quieres aprender a escribir tests pero no sabes por dónde empezar?
-                </p>
+                <p>¿Desarrollas para la web?</p>
+                <p>¿Tu equipo tarda semanas en desplegar cualquier cambio?</p>
+                <p>¿Tu código se ha vuelto incomprensible?</p>
+                <p>¿Nadie entiende por que se rompe todo cada vez que se toca?</p>
             </div>
         </div>
     </section>
+
     <!-- About -->
     <section class="About light">
         <!--  -->
         <div class="wrapper">
             <div class="column">
                 <span> Sobre este libro</span>
+
                 <h2>
-                    Aprende con ejemplos
+                    Una base teórica
                 </h2>
 
                 <p>
-                    Los tests automáticos no son nada nuevo en el mundo del software y aunque cada vez más
-                    desarrolladores
-                    están
-                    convencidos de su utilidad, pocos escriben tests en su día a día. Las excusas son siempre las
-                    mismas: no
-                    sé
-                    hacer tests, no tengo tiempo, es algo que tengo pendiente...
+                    La arquitectura de software es un tema que se ha estudiado desde hace décadas y que tradicionalmente
+                    se ha relegado en un segundo plano en los entornos frontend.
+                    Sin embargo la web es cada vez más importante y se hacen necesarias prácticas y enfoques
+                    arquitectónicos robustos que garanticen aplicaciones web escalables, mantenibles y eficientes
                 </p>
 
                 <p>
-                    Este libro pretende acabar con todas esas excusas y enseñar a los programadores a mejorar la calidad
-                    de su código explicando mediante ejemplos qué tipos de tests existen, qué características tienen y
-                    cuándo
-                    deben de utilizarse.
+                    Este libro pretende ayudar a los programadores ofreciendo una visión teórica y práctica de
+                    arquitectura de software aplicada al frontend.
                 </p>
 
-                <img loading="lazy" src="img/1.svg" alt="" />
-                <img loading="lazy" src="img/2.svg" alt="" />
-                <img loading="lazy" src="img/3.svg" alt="" />
+                <img loading="lazy" src="static/img/1.svg" alt="" />
+                <img loading="lazy" src="static/img/2.svg" alt="" />
+                <img loading="lazy" src="static/img/3.svg" alt="" />
 
             </div>
         </div>
         <hr>
         <!--  -->
+
         <div class="wrapper">
             <div class="column">
                 <h2>Visión Colaborativa</h2>
                 <p>
-                    El libro empezó siendo una entrada en un blog y la idea es que evolucione continuamente a partir del
-                    feedback de los lectores. También estará disponible un repositorio en Github con ejemplos y
-                    ejercicios
-                    de todo lo explicado en el texto.
+                    Como todo, las arquitecturas de software no son un tema estático. Aunque la idea del libro es tratar
+                    temas que se mantienen estables en el tiempo.
+                    La idea es que evolucione continuamente a partir del feedback de los lectores. También estará
+                    disponible un repositorio en Github con ejemplos y
+                    ejercicios de todo lo explicado en el texto.
                 </p>
 
-                <img loading="lazy" src="img/4.svg" alt="" />
-                <img loading="lazy" src="img/5.svg" alt="" />
+                <img loading="lazy" src="static/img/4.svg" alt="" />
+                <img loading="lazy" src="static/img/5.svg" alt="" />
             </div>
         </div>
     </section>
+
     <!-- Author -->
     <section id="autor" class="Author">
         <div class="wrapper">
@@ -636,34 +741,30 @@
                 </p>
                 <div class="Author_social">
                     <a rel="noopener" target="_blank" href="https://twitter.com/iagolast">
-                        <img width="37" height="30" loading="lazy" alt="Twitter" src="img/twitter.svg" />
+                        <img width="37" height="30" loading="lazy" alt="Twitter" src="static/img/twitter.svg" />
                     </a>
                     <a rel="noopener" target="_blank" href="https://iagolast.github.io">
-                        <img width="35" height="35" alt="Github" src="img/github.svg" />
+                        <img width="35" height="35" alt="Github" src="static/img/github.svg" />
                     </a>
                 </div>
             </div>
-            <img loading="lazy" src="img/info.svg" alt="" />
+            <img loading="lazy" src="static/img/info.svg" alt="" />
         </div>
 
         <div id="comprar" class="Buy">
             <span> Comprar </span>
             <h2> Elige la plataforma</h2>
             <div class="Buy_buttons">
-                <!-- <a class="Buy_button"> Amazon (Comming soon)</a> -->
-                <a rel="noopener" href="https://leanpub.com/frontend-testing" target="_blank" class="Buy_button">
+                <a rel="noopener" href="https://leanpub.com/frontend-architecture" target="_blank" class="Buy_button">
                     LeanPub</a>
-
-                <a rel="noopener" href="https://www.amazon.es/Frontend-Testing-Iago-Lastra/dp/B0959MMDCQ"
-                    target="_blank" class="Buy_button">
-                    Amazon (Físico & Kindle)</a>
-
-                <a rel="noopener" href="https://samples.leanpub.com/frontend-testing-sample.pdf" class="Buy_button">
+                <a rel="noopener" href="https://samples.leanpub.com/frontend-architecture-sample.pdf"
+                    class="Buy_button">
                     Descargar Muestra Gratuita
                 </a>
             </div>
         </div>
     </section>
+
     <!--  -->
     <section id="contactar" class="Contact">
         <div class="wrapper column">
@@ -685,12 +786,7 @@
     </section>
 
     <footer>
-        <span> © 2022 iagolast - </span>
-        <span>
-            Designed by
-            <a rel="noopener noreferrer" href="https://stefaniacasal.com" target="_blank"> stefaniacasal.com</a>
-        </span>
-
+        <span> © 2024 iagolast </span>
     </footer>
 
 
