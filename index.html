@@ -499,6 +499,53 @@
                 top: 0;
             }
         }
+
+        /* Styles for Índice section */
+        #indice details {
+            text-align: left;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        #indice summary {
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Be Vietnam Pro', sans-serif; /* Use default body font for summary */
+        }
+        #indice ol {
+            font-family: 'Courier New', Courier, monospace; /* Monospace font */
+            margin-top: 15px;
+            padding-left: 0; /* Remove default padding */
+            list-style-type: none; /* Remove default numbering */
+            counter-reset: chapter;
+        }
+        #indice > div > details > ol > li {
+            counter-increment: chapter;
+            margin-bottom: 10px; /* Add some space between main chapters */
+        }
+        #indice > div > details > ol > li::before {
+            content: counter(chapter) ": ";
+            font-weight: bold;
+            min-width: 2em; /* Ensure consistent alignment */
+            display: inline-block;
+        }
+        #indice ol ol {
+            margin-top: 5px;
+            padding-left: 2em; /* Indent sub-chapters */
+            list-style-type: none;
+            counter-reset: section;
+        }
+        #indice ol ol li {
+            counter-increment: section;
+            margin-bottom: 5px;
+        }
+        #indice ol ol li::before {
+            content: counter(chapter) "." counter(section) ": ";
+            font-weight: normal;
+             min-width: 3em; /* Ensure consistent alignment */
+             display: inline-block;
+        }
+        /* End Styles for Índice section */
     </style>
 
     <script type="application/ld+json">
@@ -510,7 +557,7 @@
       "description": "El libro 'Frontend Testing' te enseña cómo escribir tests efectivos para tus aplicaciones web. Aprende desde cero sobre Jest, Cypress, Playwright y más.",
       "author": {
         "@type": "Person",
-        "name": "Iago Last",
+        "name": "Iago Lastra Rodríguez",
         "sameAs": "https://twitter.com/iagolast"
       },
       "url": "https://frontend-testing.org/",
@@ -639,6 +686,96 @@
                 <img loading="lazy" src="img/4.svg" alt="" />
                 <img loading="lazy" src="img/5.svg" alt="" />
             </div>
+        </div>
+    </section>
+    <!-- Índice -->
+    <section id="indice" class="light">
+        <div class="wrapper column">
+            <h2>Índice</h2>
+            <details>
+                <summary>Ver/Ocultar Índice</summary>
+                <ol>
+                    <li>Introducción
+                        <ol>
+                            <li>El típico flujo de trabajo</li>
+                            <li>¿Qué es un test?</li>
+                            <li>Tests automáticos vs no automáticos</li>
+                            <li>La importancia de los tests</li>
+                            <li>¿Por dónde empiezo?</li>
+                        </ol>
+                    </li>
+                    <li>Características de un test
+                        <ol>
+                            <li>Sensibilidad: Sensible vs. Insensible</li>
+                            <li>Especificidad: Específico vs Inespecífico</li>
+                            <li>Flexibilidad: Flexible vs Inflexible</li>
+                            <li>Estabilidad: Estable vs Inestable</li>
+                            <li>Precisión: Preciso vs Impreciso</li>
+                            <li>Mantenibilidad: Mantenible vs Inmantenible</li>
+                            <li>Velocidad: Veloz vs Lento</li>
+                            <li>Profundidad: Profundo vs Superficial</li>
+                            <li>Conclusión</li>
+                        </ol>
+                    </li>
+                    <li>Tipos de Tests
+                        <ol>
+                            <li>Clasificación tradicional</li>
+                            <li>Clasificación alternativa</li>
+                            <li>Conclusión</li>
+                        </ol>
+                    </li>
+                    <li>Cómo distribuir los tests
+                        <ol>
+                            <li>Pirámide del testing</li>
+                            <li>Trofeo del testing</li>
+                            <li>El barco del testing</li>
+                        </ol>
+                    </li>
+                    <li>Ejemplos de frontend testing
+                        <ol>
+                            <li>Ejemplo I: Los lados de un triángulo</li>
+                            <li>Ejemplo II: La aplicación de venta de entradas</li>
+                            <li>Ejemplo III: Viajando en el tiempo</li>
+                            <li>Ejemplo IV: Validando contraseñas</li>
+                        </ol>
+                    </li>
+                    <li>Otros tipos de testing
+                        <ol>
+                            <li>E2E Testing</li>
+                            <li>Visual Regression Testing</li>
+                            <li>API Testing</li>
+                            <li>Contract Testing</li>
+                            <li>Snapshot testing</li>
+                            <li>Property-based Testing</li>
+                            <li>Performance testing</li>
+                            <li>Manual testing</li>
+                        </ol>
+                    </li>
+                    <li>Testing doubles
+                        <ol>
+                            <li>Dummy</li>
+                            <li>Stubs</li>
+                            <li>Spies</li>
+                            <li>Fake</li>
+                            <li>Mock</li>
+                        </ol>
+                    </li>
+                    <li>Buenas prácticas
+                        <ol>
+                            <li>SWA: Should when and</li>
+                            <li>Partes de un test (AAA)</li>
+                            <li>Un test solamente debería fallar por una razón</li>
+                            <li>No incluir lógica en el test</li>
+                            <li>No probar la implementación</li>
+                            <li>No probar métodos privados.</li>
+                            <li>Probar comportamiento en lugar de estado</li>
+                            <li>Exportar Servicios</li>
+                            <li>No confiar ciegamente en la cobertura</li>
+                        </ol>
+                    </li>
+                    <li>Conclusión</li>
+                </ol>
+            </details>
         </div>
     </section>
     <!-- Author -->
