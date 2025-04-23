@@ -20,7 +20,7 @@
         content="El libro 'Frontend Testing' te enseña cómo escribir tests efectivos. Aprende desde cero sobre Jest, Cypress, Playwright y más.">
     <meta name="twitter:image" content="https://frontend-testing.org/image.png">
     <meta name="twitter:image:alt" content="Portada del libro Frontend Testing">
-    <meta name="theme-color" content="#4791F6">
+    <meta name="theme-color" content="#004aad">
     <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
@@ -42,14 +42,17 @@
         content="El libro 'Frontend Testing' te enseña cómo escribir tests efectivos para tus aplicaciones web. Aprende desde cero sobre Jest, Cypress, Playwright y más.">
     <meta property="og:image" content="https://frontend-testing.org/image.png">
     <meta property="og:image:alt" content="Portada del libro Frontend Testing">
-    <meta name="msapplication-TileColor" content="#4791F6">
+    <meta name="msapplication-TileColor" content="#004aad">
     <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700;900&family=Lilita+One&display=swap');
+
         body {
             position: relative;
             margin: 0;
             transition: all .2s;
+            font-family: 'Be Vietnam Pro', sans-serif;
         }
 
         header {
@@ -66,14 +69,11 @@
 
         header nav ul li a {
             color: #222;
-            font-family: "Avenir Book";
             font-size: 12px;
             font-weight: 900;
             letter-spacing: 1px;
             line-height: 16px;
             padding: 24px;
-
-
         }
 
         section {
@@ -87,14 +87,17 @@
             display: inline-block;
         }
 
-        h2 {
+        h1, h2, h3, h4, h5, h6 {
             margin: 0;
+            font-family: 'Lilita One', sans-serif;
+            font-weight: 400;
+        }
+
+        h2 {
             font-size: 28px;
             letter-spacing: 0;
             line-height: 34px;
             text-align: center;
-            font-family: 'Inter', sans-serif;
-            font-weight: 700
         }
 
         section.dark {
@@ -118,16 +121,10 @@
             font-size: 14px;
             letter-spacing: 1px;
             line-height: 40px;
-            font-weight: 600;
-            font-family: 'Inter', sans-serif;
-        }
-
-        section.light h2 {
-            font-family: 'Inter', sans-serif;
+            font-weight: 500;
         }
 
         section.light p {
-            font-family: "Avenir Book";
             font-size: 18px;
             font-weight: 300;
             letter-spacing: 0;
@@ -140,12 +137,9 @@
         }
 
         .First h1 {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
             font-size: 50px;
             letter-spacing: 0;
             line-height: 60px;
-            font-weight: 600;
         }
 
         .First_book {
@@ -153,7 +147,6 @@
         }
 
         .First p {
-            font-family: "Avenir Book";
             font-size: 22px;
             font-weight: 300;
             letter-spacing: 0;
@@ -169,10 +162,9 @@
         .First_Button {
             border-radius: 54.5px;
             padding: 22px 44px;
-            background-color: #4791F6;
-            box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
+            background-color: #004aad;
+            box-shadow: 0 10px 20px -1px rgba(0, 74, 173, 0.2);
             color: #FFFFFF;
-            font-family: "Avenir Book";
             font-size: 20px;
             font-weight: 900;
             letter-spacing: 0;
@@ -180,20 +172,12 @@
         }
 
         .First_Button:hover {
-            box-shadow: 0 10px 20px -1px rgba(20, 110, 233, 0.2);
+            box-shadow: 0 10px 20px -1px rgba(0, 74, 173, 0.3);
         }
 
         .Second {
             padding-top: 0;
             text-align: center;
-        }
-
-        h2 {
-            font-family: 'Inter', sans-serif;
-            font-size: 42px;
-            letter-spacing: 0;
-            line-height: 51px;
-            margin-bottom: 34px;
         }
 
         .Second_book {
@@ -211,7 +195,6 @@
         }
 
         .Second p {
-            font-family: "Avenir Book";
             font-size: 16px;
             font-weight: 300;
             letter-spacing: 0;
@@ -247,7 +230,6 @@
         }
 
         .Author span {
-            font-family: 'Inter', sans-serif;
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 1px;
@@ -263,7 +245,7 @@
 
         .Author_name {
             color: #222222;
-            font-family: Inter;
+            font-family: 'Lilita One', sans-serif;
             font-size: 42px;
             letter-spacing: 0;
             line-height: 53px;
@@ -271,7 +253,6 @@
         }
 
         .Author p {
-            font-family: Avenir;
             font-size: 18px;
             font-weight: 300;
             letter-spacing: 0;
@@ -293,7 +274,7 @@
             color: white;
             position: relative;
             max-width: 1098px;
-            background: linear-gradient(180deg, #333E4E 0%, #1D2837 100%);
+            background: #004aad;
             margin: auto;
             bottom: -100px;
             z-index: 1;
@@ -301,7 +282,6 @@
 
         .Buy span {
             text-transform: uppercase;
-
             font-size: 14px;
             letter-spacing: 1px;
             line-height: 40px;
@@ -309,11 +289,10 @@
         }
 
         .Buy h2 {
-            font-family: 'Inter', sans-serif;
             font-size: 28px;
             letter-spacing: 0;
             line-height: 34px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         .Buy_buttons {
@@ -326,7 +305,6 @@
             border: 2px solid #FFFFFF;
             border-radius: 54.5px;
             color: #FFFFFF;
-            font-family: Avenir;
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 0;
@@ -348,11 +326,9 @@
             letter-spacing: 1px;
             line-height: 40px;
             font-weight: 600;
-            font-family: 'Inter', sans-serif;
         }
 
         .Contact p {
-            font-family: "Avenir Book";
             font-size: 16px;
             font-weight: 300;
             letter-spacing: 0;
@@ -362,10 +338,9 @@
 
         footer {
             color: #fff;
-            background: #1D2837;
+            background: #004aad;
             text-align: center;
             padding: 32px;
-            font-family: Avenir;
             font-size: 15px;
             font-weight: 300;
             letter-spacing: 0;
@@ -409,7 +384,6 @@
 
             .First {
                 position: relative;
-                /* display: flex; */
             }
 
             .First h1 {
@@ -451,13 +425,13 @@
 
             .Second h2 {
                 text-align: left;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 42px;
                 line-height: 51px;
             }
 
             .Second p {
-                font-size: 30px;
+                font-size: 24px;
                 font-weight: 300;
                 letter-spacing: 0;
                 line-height: 40px;
@@ -593,7 +567,7 @@
                     </a>
                 </div>
                 <div class="First_book">
-                    <img width="466" height="656" src="img/coverx2.png" alt="" />
+                    <img width="466" height="656" src="img/cover.png" alt="Portada del libro Frontend Testing" />
                 </div>
             </div>
     </section>
@@ -602,7 +576,7 @@
         <div class="wrapper">
             <div class="column">
                 <div class="Second_book">
-                    <img width="466" height="656" src="img/coverx2.png" alt="" />
+                    <img width="466" height="656" src="img/cover.png" alt="Portada del libro Frontend Testing" />
                 </div>
 
                 <h2>Marca la diferencia</h2>
@@ -667,6 +641,7 @@
         </div>
     </section>
     <!-- Author -->
+    
     <section id="autor" class="Author">
         <div class="wrapper">
             <div class="Info column">
@@ -703,15 +678,16 @@
 
                 <a rel="noopener" href="https://www.amazon.es/Frontend-Testing-Iago-Lastra/dp/B0959MMDCQ"
                     target="_blank" class="Buy_button">
-                    Amazon (Físico & Kindle)</a>
+                    Amazon (Físico & Kindle)</a> <span style="font-size: 0.8em; display: block; margin-top: -10px;">(Edición 2022)</span>
 
-                <a rel="noopener" href="https://samples.leanpub.com/frontend-testing-sample.pdf" class="Buy_button">
+                <a href="resources/frontend-testing-sample.pdf" class="Buy_button" download="Frontend-Testing-Muestra.pdf">
                     Descargar Muestra Gratuita
                 </a>
             </div>
         </div>
     </section>
     <!--  -->
+    
     <section id="contactar" class="Contact">
         <div class="wrapper column">
             <span> Contactar </span>
@@ -732,12 +708,7 @@
     </section>
 
     <footer>
-        <span> © 2022 iagolast - </span>
-        <span>
-            Designed by
-            <a rel="noopener noreferrer" href="https://stefaniacasal.com" target="_blank"> stefaniacasal.com</a>
-        </span>
-
+        <span> © 2025 iagolast </span>
     </footer>
 
 
